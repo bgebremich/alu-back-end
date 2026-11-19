@@ -16,6 +16,6 @@ if __name__ == "__main__":
         tasks.append({"task": task.get("title"),
                       "completed": task.get("completed"),
                       "username": username})
-                      
+
     with open("{}.json".format(user_id), "w") as f:
         json.dump({user_id: tasks}, f)
